@@ -12,6 +12,7 @@ name: Build iOS
 # where only the top of the stack is ever read against `main`. Four iOS-only
 # commits reached review that way without Swift being built once.
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches: [main]
